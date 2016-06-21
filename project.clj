@@ -5,7 +5,9 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.76"]
-                 [org.clojure/core.async "0.2.385"]]
+                 [org.clojure/core.async "0.2.385"]
+                 
+                 [com.cemerick/url "0.1.1"]]
 
   :plugins [[lein-cljsbuild "1.1.3"]]
 
@@ -34,7 +36,6 @@
   }
 
   :source-paths ["src/clj"]
-  :main ^:skip-aot soundera.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
 )
